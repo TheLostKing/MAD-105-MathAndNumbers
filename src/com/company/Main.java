@@ -20,8 +20,8 @@ public class Main {
 
         }while(purchase != 0);
 
-        taxes = total * 0.025;
-        taxes = Double.parseDouble(format.format(taxes));
+        taxes = total * 0.025; //finds taxes
+        taxes = Double.parseDouble(format.format(taxes)); //formats taxes to 2 decimal places
 
         System.out.println("Your Total is $" + total);
         System.out.println("The Taxes are $" + taxes);
@@ -29,8 +29,8 @@ public class Main {
         System.out.print("What percentage do you want you tip to be(recommended 17.5%)? ");
         tipPercentage = scan.nextDouble();
 
-        tip = total * (tipPercentage/100);
-        tip = Double.parseDouble(format.format(tip));
+        tip = total * (tipPercentage/100); //calculates tip
+        tip = Double.parseDouble(format.format(tip)); //formats tip to 2 decimal places
 
         System.out.println("Your Tip is $" + tip);
         System.out.println("Your Total is $" + (total + taxes + tip));
